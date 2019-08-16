@@ -1,0 +1,51 @@
+{
+  "name": "scratchese-origin",
+  "description": "Standard open source project starter kit.",
+  "version": "0.0.2",
+  "scripts": {
+    "test": "standard --fix",
+    "dev": "node-run",
+    "prepublish:local": "git reset && npm version patch --force && git add .",
+    "publish:public": "npm publish --access=public",
+    "precommit": "npm run test"
+  },
+  "main": "index.js",
+  "bin": {
+    "node-run": "index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "open source"
+  ],
+  "author": {
+    "name": "Andy Chen",
+    "email": "amazingandyyy@gmail.com",
+    "url": "https://amazingandyyy.com/"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run test",
+      "git add"
+    ]
+  },
+  "markdeck": {
+    "url": "https://github.com/amazingandyyy/scratchese-origin/tree/master/docs"
+  },
+  "bugs": {
+    "url": "https://github.com/amazingandyyy/scratchese-origin/issues"
+  },
+  "homepage": "https://github.com/amazingandyyy/scratchese-origin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/amazingandyyy/scratchese-origin.git"
+  },
+  "devDependencies": {
+    "@amazingandyyy/git-hooks": "^0.1.0",
+    "lint-staged": "^9.2.1",
+    "standard": "*"
+  },
+  "dependencies": {}
+}
