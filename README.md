@@ -20,7 +20,6 @@ Use leveldb just like mongo.
 ## Installation
 
 ```shell
-$ git clone git@github.com:amazingandyyy/levelize.git
 $ npm i --save levelize
 # or
 $ yarn add levelize
