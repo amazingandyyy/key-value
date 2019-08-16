@@ -28,11 +28,10 @@ $ yarn add @amazingandyyy/levelize
 ## Usage
 
 ```javascript
-const process = require('process')
-const Levelize = require('@amazingandyyy/levelize')
-const level = require('level')
 
-const levelize = new Levelize(level, 'levelize-demo-2019', {
+const levelize = new Levelize(level)
+
+levelize.connect('levelize-demo-2019', {
   location: process.cwd()
 })
 

@@ -2,13 +2,17 @@ const path = require('path')
 const fs = require('fs')
 const sub = require('subleveldown')
 class Levelize {
-  constructor (level, name, options) {
+  constructor (level) {
+    this.level = level;
+    this.schemas = {}
+  }
+
+  connect(name, options){
     this.options = options
     const dbpointer = path.join(this.options.location || __dirname, '.db');
     // check if .db folder exist, create it otherwise
     (!fs.existsSync(dbpointer)) && fs.mkdirSync(dbpointer)
-    this.db = level(path.join(dbpointer, name), options)
-    this.schemas = {}
+    this.db = this.level(path.join(dbpointer, name), options)
   }
 
   schema (obj) {
