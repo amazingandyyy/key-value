@@ -1,16 +1,16 @@
 <h1 align="center">
-🎁 scratchese-origin
+🎁 use-level
 </h1>
 <p align="center">
-Standard open source project starter kit for scratchese.
+Use leveldb just like mongo.
 </p>
 
 <p align="center">
-   <a href="https://github.com/amazingandyyy/scratchese-origin/blob/master/LICENSE">
+   <a href="https://github.com/amazingandyyy/use-level/blob/master/LICENSE">
       <img src="https://img.shields.io/badge/License-MIT-green.svg" />
    </a>
-   <a href="https://circleci.com/gh/amazingandyyy/scratchese-origin">
-      <img src="https://circleci.com/gh/amazingandyyy/scratchese-origin.svg?style=svg" />
+   <a href="https://circleci.com/gh/amazingandyyy/use-level">
+      <img src="https://circleci.com/gh/amazingandyyy/use-level.svg?style=svg" />
    </a>
 </p>
 
@@ -20,16 +20,16 @@ Standard open source project starter kit for scratchese.
 ## Installation
 
 ```shell
-$ git clone git@github.com:amazingandyyy/scratchese-origin.git
-$ npm i --save scratchese-origin
+$ git clone git@github.com:amazingandyyy/use-level.git
+$ npm i --save use-level
 # or
-$ yarn add scratchese-origin
+$ yarn add use-level
 ```
 
 ## Usage
 
 ```javascript
-const lib = require('scratchese-origin');
+const lib = require('use-level');
 
 ```
 

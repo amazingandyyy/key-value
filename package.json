@@ -1,7 +1,7 @@
 {
-  "name": "scratchese-origin",
-  "description": "Standard open source project starter kit.",
-  "version": "0.0.2",
+  "name": "@amazingandyyy/use-level",
+  "description": "Use levelDB as easy as Mongoose.",
+  "version": "0.0.1",
   "scripts": {
     "test": "standard --fix",
     "dev": "node-run",
@@ -9,12 +9,13 @@
     "publish:public": "npm publish --access=public",
     "precommit": "npm run test"
   },
-  "main": "index.js",
+  "main": "core.js",
   "bin": {
-    "node-run": "index.js"
+    "kv": "cli.js"
   },
   "files": [
-    "index.js"
+    "cli.js",
+    "core.js"
   ],
   "keywords": [
     "open source"
@@ -31,16 +32,16 @@
     ]
   },
   "markdeck": {
-    "url": "https://github.com/amazingandyyy/scratchese-origin/tree/master/docs"
+    "url": "https://github.com/amazingandyyy/use-level/tree/master/docs"
   },
   "bugs": {
-    "url": "https://github.com/amazingandyyy/scratchese-origin/issues"
+    "url": "https://github.com/amazingandyyy/use-level/issues"
   },
-  "homepage": "https://github.com/amazingandyyy/scratchese-origin",
+  "homepage": "https://github.com/amazingandyyy/use-level",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/amazingandyyy/scratchese-origin.git"
+    "url": "git://github.com/amazingandyyy/use-level.git"
   },
   "devDependencies": {
     "@amazingandyyy/git-hooks": "^0.1.0",
