@@ -1,4 +1,8 @@
+const process = require('process')
 const level = require('level')
-const levelize = require('../../index')
+const Levelize = require('../../index')
+const levelize = new Levelize(level)
 
-levelize.connect(level, '')
+levelize.connect('levelize-demo-2019', {
+  location: process.cwd()
+})

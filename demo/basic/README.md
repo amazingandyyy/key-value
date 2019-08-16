@@ -1,10 +1,11 @@
 # Demo
 
 ```javascript
-const level = require('level');
-const levelize = require('../../index');
-
-levelize.connect(level, '')
+const level = require('level')
+const levelize = require('../../index')
+const levelize = new Levelize(level)
+const dbName = 'levelize-demo-2019';
+levelize.connect('levelize-demo-2019')
 
 const UserShema = new levelize.Schema({ id: String, username: String, passpord: String });
 const UserModel = levelize.model('UserShema', UserShema);
