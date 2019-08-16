@@ -20,9 +20,9 @@ Use leveldb just like mongo.
 ## Installation
 
 ```shell
-$ npm i --save levelize
+$ npm i --save @amazingandyyy/levelize
 # or
-$ yarn add levelize
+$ yarn add @amazingandyyy/levelize
 ```
 
 ## Usage
