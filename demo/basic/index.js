@@ -1,5 +1,4 @@
-const second = require('./second')
+const level = require('level');
+const levelize = require('../../index');
 
-console.log('hi from frist')
-
-second()
+levelize.connect(level, '')

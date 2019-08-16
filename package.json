@@ -1,5 +1,5 @@
 {
-  "name": "@amazingandyyy/use-level",
+  "name": "@amazingandyyy/levelize",
   "description": "Use levelDB as easy as Mongoose.",
   "version": "0.0.1",
   "scripts": {
@@ -32,16 +32,16 @@
     ]
   },
   "markdeck": {
-    "url": "https://github.com/amazingandyyy/use-level/tree/master/docs"
+    "url": "https://github.com/amazingandyyy/levelize/tree/master/docs"
   },
   "bugs": {
-    "url": "https://github.com/amazingandyyy/use-level/issues"
+    "url": "https://github.com/amazingandyyy/levelize/issues"
   },
-  "homepage": "https://github.com/amazingandyyy/use-level",
+  "homepage": "https://github.com/amazingandyyy/levelize",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/amazingandyyy/use-level.git"
+    "url": "git://github.com/amazingandyyy/levelize.git"
   },
   "devDependencies": {
     "@amazingandyyy/git-hooks": "^0.1.0",
