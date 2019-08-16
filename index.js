@@ -3,11 +3,11 @@ const fs = require('fs')
 const sub = require('subleveldown')
 class Levelize {
   constructor (level) {
-    this.level = level;
+    this.level = level
     this.schemas = {}
   }
 
-  connect(name, options){
+  connect (name, options) {
     this.options = options
     const dbpointer = path.join(this.options.location || __dirname, '.db');
     // check if .db folder exist, create it otherwise
