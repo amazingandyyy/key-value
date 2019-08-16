@@ -48,5 +48,8 @@
     "lint-staged": "^9.2.1",
     "standard": "*"
   },
-  "dependencies": {}
+  "dependencies": {
+    "level": "^5.0.1",
+    "subleveldown": "^4.1.0"
+  }
 }

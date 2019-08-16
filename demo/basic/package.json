@@ -1,6 +1,7 @@
 {
   "main": "index.js",
   "dependencies": {
-    "level": "^5.0.1"
+    "level": "^5.0.1",
+    "subleveldown": "^4.1.0"
   }
 }
