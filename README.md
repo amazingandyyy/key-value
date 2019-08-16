@@ -28,6 +28,9 @@ $ yarn add @amazingandyyy/levelize
 ## Usage
 
 ```javascript
+const process = require('process')
+const level = require('level')
+const Levelize = require('@amazingandyyy/levelize')
 
 const levelize = new Levelize(level)
 
