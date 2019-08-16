@@ -32,7 +32,7 @@ $ yarn add levelize
 const level = require('level')
 const levelize = require('../../index')
 const levelize = new Levelize(level)
-const dbName = 'levelize-demo-2019';
+
 levelize.connect('levelize-demo-2019')
 
 const UserShema = new levelize.Schema({ id: String, username: String, passpord: String });
