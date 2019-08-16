@@ -1,5 +1,5 @@
 class Levelize {
-  
+
 }
 
-module.exports = Levelize;
+module.exports = Levelize
