@@ -26,5 +26,3 @@ userModel.getOne({
 }, (err, user) => {
   console.log(err, user)
 })
-
-// console.log(userModel);

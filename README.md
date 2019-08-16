@@ -28,24 +28,35 @@ $ yarn add levelize
 ## Usage
 
 ```javascript
+const process = require('process')
+const Levelize = require('../../index')
 const level = require('level')
-const levelize = require('../../index')
-const levelize = new Levelize(level)
 
-levelize.connect('levelize-demo-2019')
-
-const UserShema = new levelize.Schema({ id: String, username: String, passpord: String });
-const UserModel = levelize.model('UserShema', UserShema);
-
-UserModel.createOne({ username: 'andy' }, (err, user) {
-  if(err)return console.log(err);
-  console.log(user)
+const levelize = new Levelize(level, 'levelize-demo-2019', {
+  location: process.cwd()
 })
 
-UserModel.findOne({ username }, (err, user) {
-  if(err)return console.log(err);
-  console.log(user)
+const UserShema = levelize.schema({
+  username: String,
+  password: String,
+  email: String
 })
+
+const userModel = levelize.model('User', UserShema)
+
+for (let i = 0; i < 10; i++) {
+  userModel.createOne({
+    username: `amazingandyyy-${i}@gmail.com`, password: `xx${i}xx`
+  })
+}
+userModel.getAll()
+
+userModel.getOne({
+  username: `amazingandyyy-3@gmail.com`
+}, (err, user) => {
+  console.log(err, user)
+})
+
 ```
 
 ## License
