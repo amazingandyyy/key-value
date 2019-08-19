@@ -12,6 +12,9 @@ Use leveldb just like mongo.
    <a href="https://circleci.com/gh/amazingandyyy/levelize">
       <img src="https://circleci.com/gh/amazingandyyy/levelize.svg?style=svg" />
    </a>
+   <a href="https://www.npmjs.com/package/@amazingandyyy/levelize">
+      <img src="https://badge.fury.io/js/%40amazingandyyy%2Flevelize.svg" />
+   </a>
 </p>
 
 > open source!
